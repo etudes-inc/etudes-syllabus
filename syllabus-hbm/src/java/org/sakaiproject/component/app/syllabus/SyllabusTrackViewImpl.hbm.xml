@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping
+    PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN"
+    "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+    <class
+        name="org.sakaiproject.component.app.syllabus.SyllabusTrackViewImpl"
+        table="SAKAI_SYLLABUS_TRACK_VIEW" optimistic-lock="version">
+      
+        <version name="lockId" />
+        
+        <property name="userId" column="USER_ID" type="string" length="99" not-null="true" />
+ 		<property name="contextId" column="CONTEXT_ID" type="string" length="99" not-null="true" />
+        <property name="acceptedOn" column="ACCEPTED_ON" type="timestamp" />
+        <property name="firstVisitAt" column="FIRST_VISIT" type="timestamp" />
+        <property name="lastVisitAt" column="LAST_VISIT" type="timestamp" />
+      </class>
+    
+    <query name="trackSyllabusItemByUserAndContextIds">
+        <![CDATA[from org.sakaiproject.component.app.syllabus.SyllabusTrackViewImpl as item where item.contextId = :contextId and item.userId = :userId]]>
+    </query>    
+
+  <query name="trackSyllabusItemByContextIds">
+        <![CDATA[from org.sakaiproject.component.app.syllabus.SyllabusTrackViewImpl as item where item.contextId = :contextId]]>
+    </query>   
+</hibernate-mapping>

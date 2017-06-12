@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="var" path="JRE_LIB" sourcepath="JRE_SRC"/>
+	<classpathentry kind="src" path="syllabus-api/src/java"/>
+	<classpathentry kind="src" path="syllabus-hbm/src/java"/>
+	<classpathentry kind="src" path="syllabus-impl/src/java"/>
+	<classpathentry kind="src" path="syllabus-app/src/java"/>
+	<classpathentry kind="var" path="MAVEN_REPO/jsf/jars/jsf-impl-1.1.01.jar"/>
+	<classpathentry kind="var" path="MAVEN_REPO/jsf/jars/jsf-api-1.1.01.jar"/>
+	<classpathentry kind="var" path="MAVEN_REPO/org.hibernate/jars/hibernate-3.1.3.jar"/>
+	<classpathentry kind="var" path="MAVEN_REPO/xerces/jars/xercesImpl-2.6.2.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/jsf"/>
+	<classpathentry kind="src" path="/entity-api"/>
+	<classpathentry kind="src" path="/event-api"/>
+	<classpathentry kind="src" path="/component-api"/>
+	<classpathentry kind="src" path="/user-api"/>
+	<classpathentry kind="src" path="/email-api"/>
+	<classpathentry kind="src" path="/email-impl"/>
+	<classpathentry kind="var" path="MAVEN_REPO/commons-logging/jars/commons-logging-1.0.4.jar"/>
+	<classpathentry kind="src" path="/content-api"/>
+	<classpathentry kind="src" path="/site-api"/>
+	<classpathentry kind="src" path="/authz-api"/>
+	<classpathentry kind="src" path="/tool-api"/>
+	<classpathentry kind="var" path="MAVEN_REPO/servletapi/jars/servletapi-2.4.jar"/>
+	<classpathentry kind="var" path="MAVEN_REPO/jspapi/jars/jsp-api-2.0.jar"/>
+	<classpathentry kind="var" path="MAVEN_REPO/org.springframework/jars/spring-1.2.8.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/util-api"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/util-util"/>
+	<classpathentry kind="src" path="/event-util"/>
+	<classpathentry kind="src" path="/entity-util"/>
+	<classpathentry kind="src" path="/etudes-util"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/etudes-util-api"/>
+	<classpathentry kind="var" path="MAVEN_REPO/etudes/jars/etudes-util-1.0.jar"/>
+	<classpathentry kind="src" path="/db-api"/>
+	<classpathentry kind="var" path="MAVEN_REPO/commons-fileupload/jars/commons-fileupload-1.3.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

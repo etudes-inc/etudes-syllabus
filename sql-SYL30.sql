@@ -1,0 +1,1 @@
+ALTER TABLE sakai_syllabus_data MODIFY asset LONGTEXT;
